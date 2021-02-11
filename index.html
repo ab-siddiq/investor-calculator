@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investor Input</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="tax-calculator">
+        <div class="container">
+            <div class="grid">
+                <div class="grid-child">
+                    <div class="text-center pb-5">
+                        <h2 class="text-capitalize">Investor Input</h2>
+                        <div class="">
+                            <hr class="line m-auto">
+                        </div>
+                    </div>
+                    <!-- tax input -->
+                    <div class="tax-input">
+                        <form action="" class="">
+                            <div class="form-group mb-3">
+                                <label for="">Risk Tolerance</label>
+                                <select class="form-control" id="">
+                                    <!-- <option selected>Open this select menu</option> -->
+                                    <option selected>Select risk tolerance</option>
+                                    <option value="1">Low</option>
+                                    <option value="2">Moderate</option>
+                                    <option value="3">High</option>
+                                </select>
+
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="">Current assets</label>
+                                <input type="text" class="form-control" id="" name="" placeholder="" value="4000000">
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="">Savings per year</label>
+                                <input type="text" class="form-control" id="" name="" placeholder="" value="60000">
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="">Marginal tax rate</label>
+                                <select class="form-control" id="">
+                                    <!-- <option selected>Open this select menu</option> -->
+                                    <option selected>Select marginal tax rate</option>
+                                    <option value="1">20%</option>
+                                    <option value="2">25%</option>
+                                    <option value="3">30%</option>
+                                    <option value="4">35%</option>
+                                    <option value="5">37.5%</option>
+                                    <option value="6">40%</option>
+                                    <option value="7">42.5%</option>
+                                    <option value="8">45%</option>
+                                </select>
+                            </div>
+
+
+                        </form>
+                    </div>
+                    <!-- tax output -->
+                    <div class="tax-output">
+                        <p class="">
+                            It is equal to liquidity constraint <span id="">30000</span> it is equal to six months
+                            savings.
+                        </p>
+                        <table class="table table-borderless w-25">
+                            <!-- <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                              </tr>
+                            </thead> -->
+                            <tbody>
+                                <tr>
+                                    <td id="">Ekush's Fund</td>
+                                    <td id="">0.2</td>
+                                </tr>
+                                <tr>
+                                    <td id="">Shanchaypatra</td>
+                                    <td id="">0.6425</td>
+                                </tr>
+                                <tr>
+                                    <td id="">Bank FDR</td>
+                                    <td id="">0.15</td>
+                                </tr>
+                                <tr>
+                                    <td id="">Cash</td>
+                                    <td id="">0.0075</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                    
+
+                    <div id="chartContainer" style="height: 300px; width: 100%;" class=""></div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+    </section>
+    
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

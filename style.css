@@ -1,0 +1,47 @@
+#tax-calculator .grid {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+#tax-calculator .grid-child {
+    width: 90%;
+    /* height: 90%; */
+    /* margin: 20px 0; */
+    padding: 40px 60px;
+    box-shadow: 10px 10px 30px grey;
+    border-radius: 10px;
+}
+
+#tax-calculator .calculate-button {
+    background-color: #F27023;
+    color: #fff;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#tax-calculator .calculate-button:hover{background-color: #fff; border: 1px solid #F27023; color: #F27023;}
+
+#tax-calculator hr.line {
+    width: 80px;
+    height: 4px;
+    background-color: #B02A30;
+    opacity: 100%
+}
+
+#tax-calculator .tax-input{background-color: #ece2e1;padding: 30px 30px; border-radius: 10px; margin-bottom: 30px;}
+#tax-calculator .tax-output{background-color: #d3e0dc;padding: 30px 30px; border-radius: 10px; margin-bottom: 30px;}
+#tax-calculator .tax-summary{background-color: #fdf1d6;padding: 30px 30px; border-radius: 10px; margin-bottom: 30px;}
+
+#tax-calculator {}
+
+#tax-calculator {}
+
+#tax-calculator {}
+
+#tax-calculator {}
+
+#tax-calculator {}
