@@ -24,10 +24,10 @@
                     </div>
                     <!-- tax input -->
                     <div class="tax-input">
-                        <form action="" class="w-5">
+                        <form action="" class="w-5" id="investor-form">
                             <div class="form-group mb-3">
                                 <label for="">Risk Tolerance</label>
-                                <select class="form-control" id="">
+                                <select class="form-control" id="investor-risk-tolerance-input">
                                     <!-- <option selected>Open this select menu</option> -->
                                     <option selected>Select risk tolerance</option>
                                     <option value="1">Low</option>
@@ -38,21 +38,18 @@
                             </div>
                             <div class="form-group mb-3 ">
                                 <label for="">Current assets</label>
-                                <input type="number" class="form-control" id="" name="" placeholder="" value="4000000">
+                                <input type="number" class="form-control" id="investor-current-asset-input" name="" placeholder="" value="4000000">
                             </div>
 
                             <div class="form-group mb-3">
                                 <label for="">Savings per year</label>
-                                <input type="number" class="form-control" id="" name="" placeholder="" value="60000">
+                                <input type="number" class="form-control" id="investor-saving-per-year-input" name="" placeholder="" value="60000">
                             </div>
-                            <div class="form-group mb-3">
-                                <label for="">Savings per year</label>
-                                <input type="number" class="form-control" id="" name="" placeholder="" value="60000">
-                            </div>
+                            
 
                             <div class="form-group mb-3">
                                 <label for="">Marginal tax rate</label>
-                                <select class="form-control" id="">
+                                <select class="form-control" id="investor-marginal-tax-rate-input">
                                     <!-- <option selected>Open this select menu</option> -->
                                     <option selected>Select marginal tax rate</option>
                                     <option value="1">20%</option>
@@ -67,15 +64,20 @@
                             </div>
                             <div class="form-group mb-3 ">
                                 <label for="">Income required in next two year</label>
-                                <input type="text" class="form-control" id="" name="" placeholder="" value="15%">
+                                <input type="text" class="form-control" id="investor-required-income-next-two-year-input" name="" placeholder="" value="15%">
                             </div>
-
+                            <div class="  ">
+                                <div class="d-flex justify-content-end">
+                                    <button onclick="" type="reset" id="investor-reset" class="btn calculate-button mx-2">reset</button>
+                                    <button onclick="investorInput()" type="submit" id="investor-calculate" class="btn calculate-button mx-2">calculate</button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                     <!-- tax output -->
                     <div class="tax-output">
                         <p class="">
-                            It is equal to liquidity constraint <span id="">30000</span> it is equal to six months
+                            It is equal to liquidity constraint <span id="ekush-liquidity-constraint"></span> it is equal to six months
                             savings.
                         </p>
                         <table class="table table-borderless w-25">
@@ -90,19 +92,19 @@
                             <tbody>
                                 <tr>
                                     <td id="">Ekush's Fund</td>
-                                    <td id="">0.2</td>
+                                    <td id="ekush-fund"></td>
                                 </tr>
                                 <tr>
                                     <td id="">Shanchaypatra</td>
-                                    <td id="">0.6425</td>
+                                    <td id="ekush-shanchaypatra"></td>
                                 </tr>
                                 <tr>
                                     <td id="">Bank FDR</td>
-                                    <td id="">0.15</td>
+                                    <td id="ekush-bank-fdr"></td>
                                 </tr>
                                 <tr>
                                     <td id="">Cash</td>
-                                    <td id="">0.0075</td>
+                                    <td id="ekush-cash"></td>
                                 </tr>
 
                             </tbody>
