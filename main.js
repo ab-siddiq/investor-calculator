@@ -40,12 +40,7 @@ function investorInput() {
     let investorMarginalTaxRateInput = parseFloat(getSelectInputValue("investor-marginal-tax-rate-input"));
     let investorRequiredIncomeNextTwoYearInput = getInputFieldValue("investor-required-income-next-two-year-input");
     
-    // console.log(investorRequiredIncomeNextTwoYearInput, typeof (investorRequiredIncomeNextTwoYearInput));
-    // console.log(parseFloat(investorMarginalTaxRateInput), typeof (parseFloat(investorMarginalTaxRateInput)));
-   
-    // console.log(investorMarginalTaxRateInput, typeof (investorMarginalTaxRateInput));
     
-    // console.log(investorRiskInput,investorCurrentAssetInput,investorSavingPerYearInput,investorMarginalTaxRateInput,investorRequiredIncomeNextTwoYearInput);
     
     let ekushFund = calculateInvestorInput(investorRiskInput, investorCurrentAssetInput);
     investorCalculationFormula(ekushFund,investorCurrentAssetInput, investorSavingPerYearInput, investorMarginalTaxRateInput, investorRequiredIncomeNextTwoYearInput);
@@ -67,35 +62,35 @@ function calculateInvestorInput(risk,asset) {
     if (risk == "Low" && asset <= 5000000) {
         return 0;
     } else if (risk == "Moderate" && asset <= 5000000) {
-        return 10/100;
+        return 10;
     }
      else if (risk == "High" && asset <= 5000000) {
-        return 20/100;
+        return 20;
     }
      else if (risk == "Low" && asset > 5000000) {
-        return 30/100;
+        return 30;
     }
      else if (risk == "Moderate" && asset > 5000000) {
-        return 40/100;
+        return 40;
     }
      else if (risk == "High" && asset > 5000000) {
-        return 50/100;
+        return 50;
     }
 }
 
 function investorCalculationFormula(ekusFund,asset,savings,marginalTaxRate,incomeRequired) {
     let liquidityConstraint = (savings / 12) * 6;
     let cash = liquidityConstraint / asset;
-    let bankFDR = incomeRequired / 100;
-    let shanchaypatra = 100 - ekusFund - bankFDR - cash;
+    let bankFDR = incomeRequired ;
+    let shanchaypatra = 100  - ekusFund- bankFDR - cash;
 
     showInvestorOutput(ekusFund,liquidityConstraint,cash,bankFDR,shanchaypatra);
 }
 
 function showInvestorOutput(ekusFund,liquidityConstraint,cash,bankFDR,shanchaypatra) {
     document.getElementById("ekush-liquidity-constraint").innerHTML = liquidityConstraint;
-    document.getElementById("ekush-fund").innerHTML = ekusFund;
-    document.getElementById("ekush-shanchaypatra").innerHTML = shanchaypatra;
-    document.getElementById("ekush-bank-fdr").innerHTML = bankFDR;
+    document.getElementById("ekush-fund").innerHTML = ekusFund/100;
+    document.getElementById("ekush-shanchaypatra").innerHTML = shanchaypatra/100;
+    document.getElementById("ekush-bank-fdr").innerHTML = bankFDR/100;
     document.getElementById("ekush-cash").innerHTML = cash;
 }
