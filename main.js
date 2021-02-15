@@ -80,9 +80,10 @@ function calculateInvestorInput(risk,asset) {
 
 function investorCalculationFormula(ekusFund,asset,savings,marginalTaxRate,incomeRequired) {
     let liquidityConstraint = (savings / 12) * 6;
-    let cash = liquidityConstraint / asset;
+    let cash = (liquidityConstraint / asset);
     let bankFDR = incomeRequired ;
-    let shanchaypatra = 100  - ekusFund- bankFDR - cash;
+    let Calculateshanchaypatra = (100 - ekusFund - bankFDR - cash)/100;
+    let shanchaypatra = Calculateshanchaypatra.toFixed(2);
 
     showInvestorOutput(ekusFund,liquidityConstraint,cash,bankFDR,shanchaypatra);
 }
@@ -90,7 +91,7 @@ function investorCalculationFormula(ekusFund,asset,savings,marginalTaxRate,incom
 function showInvestorOutput(ekusFund,liquidityConstraint,cash,bankFDR,shanchaypatra) {
     document.getElementById("ekush-liquidity-constraint").innerHTML = liquidityConstraint;
     document.getElementById("ekush-fund").innerHTML = ekusFund/100;
-    document.getElementById("ekush-shanchaypatra").innerHTML = shanchaypatra/100;
+    document.getElementById("ekush-shanchaypatra").innerHTML = shanchaypatra;
     document.getElementById("ekush-bank-fdr").innerHTML = bankFDR/100;
     document.getElementById("ekush-cash").innerHTML = cash;
 }

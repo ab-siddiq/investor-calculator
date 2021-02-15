@@ -36,7 +36,7 @@
 #tax-calculator .tax-output{background-color: #d3e0dc;padding: 30px 30px; border-radius: 10px; margin-bottom: 30px;}
 #tax-calculator .tax-summary{background-color: #fdf1d6;padding: 30px 30px; border-radius: 10px; margin-bottom: 30px;}
 
-#tax-calculator {}
+/* #tax-calculator {}
 
 #tax-calculator {}
 
@@ -44,7 +44,7 @@
 
 #tax-calculator {}
 
-#tax-calculator {}
+#tax-calculator {} */
 
 @media(max-width: 768px ){
     #tax-calculator .grid-child {
@@ -56,4 +56,4 @@
         padding: 40px 20px;
     }
 }
-@media(max-width:){}
+/* @media(max-width:){}0000000000 */
