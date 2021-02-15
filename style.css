@@ -45,3 +45,15 @@
 #tax-calculator {}
 
 #tax-calculator {}
+
+@media(max-width: 768px ){
+    #tax-calculator .grid-child {
+        width: 100%;
+    }
+}
+@media(max-width: 425px){
+    #tax-calculator .grid-child {
+        padding: 40px 20px;
+    }
+}
+@media(max-width:){}
