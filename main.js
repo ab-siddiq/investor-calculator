@@ -17,10 +17,10 @@ window.onload =  function (getValues)  {
             indexLabelFontSize: 16,
             indexLabel: "{label} - {y}%",
             dataPoints: [
-                { y: getValues.bankFDR, label: "Bank FDR" },
-                { y: getValues.cash, label: "Cash" },
-                { y: getValues.ekushFund, label: "Ekush's Funds" },
-                { y: getValues.shanchaypatra, label: "Shanchaypatra" },
+                { y: getValues.bankFDR  || 10, label: "Bank FDR" },
+                { y: getValues.cash || 0, label: "Cash" },
+                { y: getValues.ekushFund || 0, label: "Ekush's Funds" },
+                { y: getValues.shanchaypatra || 0, label: "Shanchaypatra" },
                 
             ]
         }]
