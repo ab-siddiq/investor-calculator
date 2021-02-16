@@ -1,5 +1,5 @@
-window.onload = function () {
-
+window.onload =  function (getValues)  {
+    console.log(getValues.cash);
     var options = {
         title: {
             text: "Allocate of your assets"
@@ -17,10 +17,10 @@ window.onload = function () {
             indexLabelFontSize: 16,
             indexLabel: "{label} - {y}%",
             dataPoints: [
-                { y: 15, label: "Bank FDR" },
-                { y: 1, label: "Cash" },
-                { y: 20, label: "Ekush's Funds" },
-                { y: 64, label: "Shanchaypatra" },
+                { y: getValues.bankFDR, label: "Bank FDR" },
+                { y: getValues.cash, label: "Cash" },
+                { y: getValues.ekushFund, label: "Ekush's Funds" },
+                { y: getValues.shanchaypatra, label: "Shanchaypatra" },
                 
             ]
         }]
@@ -81,10 +81,18 @@ function calculateInvestorInput(risk,asset) {
 function investorCalculationFormula(ekusFund,asset,savings,marginalTaxRate,incomeRequired) {
     let liquidityConstraint = (savings / 12) * 6;
     let cash = (liquidityConstraint / asset);
+    let ekusFunds = ekusFund;
     let bankFDR = incomeRequired ;
     let Calculateshanchaypatra = (100 - ekusFund - bankFDR - cash)/100;
     let shanchaypatra = Calculateshanchaypatra.toFixed(2);
-
+    const outputValues = {
+        liquidity: liquidityConstraint,
+        cash: cash,
+        bankFDR: bankFDR,
+        shanchaypatra: shanchaypatra,
+        ekushFund: ekusFunds,
+    }
+    window.onload(outputValues);
     showInvestorOutput(ekusFund,liquidityConstraint,cash,bankFDR,shanchaypatra);
 }
 
