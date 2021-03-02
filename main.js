@@ -145,7 +145,7 @@ function investorCalculationFormula(risk,asset,savings,marginalTaxRate,incomeReq
 function showInvestorOutput(liquidityConstraint,ekusFund,shanchaypatra,bankFDR,cash) {
     document.getElementById("ekush-liquidity-constraint").innerHTML = liquidityConstraint;
     document.getElementById("ekush-fund").innerHTML = ekusFund +"%";
-    document.getElementById("ekush-shanchaypatra").innerHTML = shanchaypatra;
+    document.getElementById("ekush-shanchaypatra").innerHTML = shanchaypatra/100;
     document.getElementById("ekush-bank-fdr").innerHTML = bankFDR/100;
     document.getElementById("ekush-cash").innerHTML = cash;
 }
