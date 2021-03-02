@@ -56,4 +56,51 @@
         padding: 40px 20px;
     }
 }
-/* @media(max-width:){}0000000000 */
+#wealth-creation .calculator-area-input button {
+    border-radius: 50px;
+    background-color: #B02A30;
+    border: 1px solid #fff;
+}
+
+#wealth-creation .calculator-area-input button:hover {
+    background-color: #FDF5E1;
+    border: 1px solid #B02A30;
+    color: #B02A30;
+}
+
+#wealth-creation .question-box h5 {
+    background-color: #B02A30;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+#wealth-creation .question-box .question-area .form-check {
+    font-size: 20px;
+}
+
+#wealth-creation .question-area,
+#wealth-creation .calculate-demographic-score {
+    background-color: #FDF5E1;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+
+#wealth-question-two,
+#wealth-question-three,
+#wealth-question-four,
+#wealth-question-five,
+#wealth-question-six,
+#wealth-question-seven,
+#child-marriage-current-age,
+#child-marriage-annual-income,
+#child-marriage-cost,
+#childs-marriage-current-age,
+#child-age-on-marriage-year,
+#child-marriage-upfront-investment,
+#child-marriage-risk,
+#wealth-demographic-calculation,
+#wealth-demographic-risk-quotient {
+    display: none;
+}
