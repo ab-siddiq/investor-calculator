@@ -1,11 +1,11 @@
-#tax-calculator .grid {
+#calculator .grid {
     height: 100vh;
     width: 100%;
     display: grid;
     place-items: center;
 }
 
-#tax-calculator .grid-child {
+#calculator .grid-child {
     width: 90%;
     /* height: 90%; */
     /* margin: 20px 0; */
@@ -14,7 +14,7 @@
     border-radius: 10px;
 }
 
-#tax-calculator .calculate-button {
+#calculator .calculate-button {
     background-color: #F27023;
     color: #fff;
     border-radius: 10px;
@@ -23,64 +23,64 @@
     letter-spacing: 2px;
 }
 
-#tax-calculator .calculate-button:hover{background-color: #fff; border: 1px solid #F27023; color: #F27023;}
+#calculator .calculate-button:hover{background-color: #fff; border: 1px solid #F27023; color: #F27023;}
 
-#tax-calculator hr.line {
+#calculator hr.line {
     width: 80px;
     height: 4px;
     background-color: #B02A30;
     opacity: 100%
 }
 
-#tax-calculator .tax-input{background-color: #ece2e1;padding: 30px 30px; border-radius: 10px; margin-bottom: 30px;}
-#tax-calculator .tax-output{background-color: #d3e0dc;padding: 30px 30px; border-radius: 10px; margin-bottom: 30px;}
-#tax-calculator .tax-summary{background-color: #fdf1d6;padding: 30px 30px; border-radius: 10px; margin-bottom: 30px;}
+#calculator .tax-input{background-color: #ece2e1;padding: 30px 30px; border-radius: 10px; margin-bottom: 30px;}
+#calculator .tax-output{background-color: #d3e0dc;padding: 30px 30px; border-radius: 10px; margin-bottom: 30px;}
+#calculator .tax-summary{background-color: #fdf1d6;padding: 30px 30px; border-radius: 10px; margin-bottom: 30px;}
 
-/* #tax-calculator {}
+/* #calculator {}
 
-#tax-calculator {}
+#calculator {}
 
-#tax-calculator {}
+#calculator {}
 
-#tax-calculator {}
+#calculator {}
 
-#tax-calculator {} */
+#calculator {} */
 
 @media(max-width: 768px ){
-    #tax-calculator .grid-child {
+    #calculator .grid-child {
         width: 100%;
     }
 }
 @media(max-width: 425px){
-    #tax-calculator .grid-child {
+    #calculator .grid-child {
         padding: 40px 20px;
     }
 }
-#wealth-creation .calculator-area-input button {
+#calculator .calculator-area-input button {
     border-radius: 50px;
     background-color: #B02A30;
     border: 1px solid #fff;
 }
 
-#wealth-creation .calculator-area-input button:hover {
+#calculator .calculator-area-input button:hover {
     background-color: #FDF5E1;
     border: 1px solid #B02A30;
     color: #B02A30;
 }
 
-#wealth-creation .question-box h5 {
+#calculator .question-box h5 {
     background-color: #B02A30;
     color: #fff;
     padding: 15px 20px;
     border-radius: 10px;
 }
 
-#wealth-creation .question-box .question-area .form-check {
+#calculator .question-box .question-area .form-check {
     font-size: 20px;
 }
 
-#wealth-creation .question-area,
-#wealth-creation .calculate-demographic-score {
+#calculator .question-area,
+#calculator .calculate-demographic-score {
     background-color: #FDF5E1;
     padding: 20px 20px;
     border-radius: 10px;
@@ -93,14 +93,61 @@
 #wealth-question-five,
 #wealth-question-six,
 #wealth-question-seven,
-#child-marriage-current-age,
-#child-marriage-annual-income,
-#child-marriage-cost,
-#childs-marriage-current-age,
-#child-age-on-marriage-year,
-#child-marriage-upfront-investment,
-#child-marriage-risk,
+#wealth-question-two,
+#wealth-question-three,
+#wealth-question-four,
+#wealth-question-five,
+#wealth-question-six,
+#wealth-question-seven,
+
+
+#risk-appetite-field,
+#wealth-demographic-calculation,
+#wealth-demographic-risk-quotient, .question-weight,#calculator-output
 #wealth-demographic-calculation,
 #wealth-demographic-risk-quotient {
     display: none;
 }
+
+#calculator .help button {
+    border-radius: 50px;
+    background-color: #B02A30;
+    border: 1px solid #fff;
+}
+
+#calculator .help button:hover {
+    background-color: #FDF5E1;
+    border: 1px solid #B02A30;
+    color: #B02A30;
+}
+
+
+
+/* #calculator  .question-box{margin:50px 200px;} */
+#calculator .question-box h5 {
+    background-color: #B02A30;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+#calculator .question-box .question-area .form-check {
+    font-size: 20px;
+}
+
+#calculator .question-area,
+#calculator .calculate-demographic-score {
+    background-color: #FDF5E1;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+
+
+/* #calculator .question-weight {
+    background-color: #31AB4D;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+} */
