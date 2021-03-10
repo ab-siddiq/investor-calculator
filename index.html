@@ -21,7 +21,16 @@
                         <div class="">
                             <hr class="line m-auto">
                         </div>
+
                     </div>
+                    <h2 class="text-left">How should I allocate my assets? </h2>
+                    <p class="calculator-pera-text">
+                        Over 90 percent of investment returns are determined by how investors allocate their assets
+                        versus security selection, market timing and other factors.* Use this calculator to help
+                        determine your portfolio allocation based on your propensity for risk.
+                        * Source: Brinson, Singer, and Beebower, 'Determinants of Portfolio Performance II: An Update,'
+                        Financial Analysts Journal, May-June 1991
+                    </p>
                     <!-- tax input -->
                     <div class="tax-input">
                         <form action="" class="w-5" id="investor-form">
@@ -30,7 +39,7 @@
                                 <select class="form-control" id="investor-risk-tolerance-input">
                                     <!-- <option selected>Open this select menu</option> -->
                                     <option selected>Select risk tolerance</option>
-                                    <option value="1" >Low</option>
+                                    <option value="1">Low</option>
                                     <option value="2">Moderate</option>
                                     <option value="3">High</option>
                                 </select>
@@ -44,33 +53,39 @@
 
                                     <!-- Button trigger modal -->
                                     <div class="d-flex justify-content-end">
-                                        <a class="btn text-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <a class="btn text-danger" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
                                             Do you need help?
                                         </a>
                                     </div>
-    
+
                                     <!-- Modal -->
                                     <div class="modal  fade" id="exampleModal" tabindex="-1"
                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered modal-xl">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-    
+
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
                                                 <div id="wealth-risk-question-area" class="modal-body">
                                                     <div class="text-center">
-                                                        <h4 class="text-center" id="exampleModalLabel">Risk Profile Calculation</h4>
-                                                        <p class="text-center">Questions to know your demographic style</p>
+                                                        <h4 class="text-center" id="exampleModalLabel">Risk Profile
+                                                            Calculation</h4>
+                                                        <p class="text-center">Questions to know your demographic style
+                                                        </p>
                                                     </div>
                                                     <div class="container">
                                                         <!-- question box 1-->
                                                         <div id="wealth-question-one" class="question-box">
-                                                            <h5 class="">The first comes to your mind while investing.</h5>
+                                                            <h5 class="">The first comes to your mind while investing.
+                                                            </h5>
                                                             <div class="question-area mb-3">
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-1-option-1','question-one-weight','question-one-option',.15)" class="form-check-input" type="radio"
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-1-option-1','question-one-weight','question-one-option',.15)"
+                                                                        class="form-check-input" type="radio"
                                                                         name="flexRadioDefault" id="question-1-option-1"
                                                                         value="1">
                                                                     <label class="form-check-label"
@@ -79,77 +94,103 @@
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-1-option-2','question-one-weight','question-one-option',.15)" class="form-check-input" type="radio"
-                                                                        name="flexRadioDefault" id="question-1-option-2" value="2">
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-1-option-2','question-one-weight','question-one-option',.15)"
+                                                                        class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="question-1-option-2"
+                                                                        value="2">
                                                                     <label class="form-check-label"
                                                                         for="question-1-option-2">
                                                                         I must have enough return with minimum risk.
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-1-option-3','question-one-weight','question-one-option',.15)" class="form-check-input" type="radio"
-                                                                        name="flexRadioDefault" id="question-1-option-3" value="3">
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-1-option-3','question-one-weight','question-one-option',.15)"
+                                                                        class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="question-1-option-3"
+                                                                        value="3">
                                                                     <label class="form-check-label"
                                                                         for="question-1-option-3">
                                                                         I must have enough return.
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-1-option-4','question-one-weight','question-one-option',.15)" class="form-check-input" type="radio"
-                                                                        name="flexRadioDefault" id="question-1-option-4" value="4">
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-1-option-4','question-one-weight','question-one-option',.15)"
+                                                                        class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="question-1-option-4"
+                                                                        value="4">
                                                                     <label class="form-check-label"
                                                                         for="question-1-option-4">
                                                                         I should go for the investment.
                                                                     </label>
                                                                 </div>
-                                                                
+
                                                             </div>
                                                             <div class="question-weight">
-                                                                <p class="m-0">Score: <label id="question-one-weight" for="">0</label></p>
-                                                                <p class="m-0">Option: <label id="question-one-option" for="">0</label></p>
+                                                                <p class="m-0">Score: <label id="question-one-weight"
+                                                                        for="">0</label></p>
+                                                                <p class="m-0">Option: <label id="question-one-option"
+                                                                        for="">0</label></p>
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button id="wealth-question-one-previous" type="button"
-                                                                    class="btn btn-secondary" data-dismiss="modal">Previous</button>
-                                                                <button onclick="needHelpQuestionButtonEvent('two','one',true)" id="wealth-question-one-next" type="button"
+                                                                    class="btn btn-secondary"
+                                                                    data-dismiss="modal">Previous</button>
+                                                                <button
+                                                                    onclick="needHelpQuestionButtonEvent('two','one',true)"
+                                                                    id="wealth-question-one-next" type="button"
                                                                     class="btn btn-primary">Next</button>
                                                             </div>
                                                         </div>
-    
-    
+
+
                                                         <!-- question box 2-->
                                                         <div id="wealth-question-two" class="question-box">
                                                             <h5 class="">You think when you hear about "Risk".</h5>
-    
+
                                                             <div class="question-area mb-3">
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-2-option-1','question-two-weight','question-two-option',.18)" class="form-check-input" type="radio"
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-2-option-1','question-two-weight','question-two-option',.18)"
+                                                                        class="form-check-input" type="radio"
                                                                         name="flexRadioDefault" id="question-2-option-1"
-                                                                         value="1">
+                                                                        value="1">
                                                                     <label class="form-check-label"
                                                                         for="question-2-option-1">
                                                                         Financial harm.
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-2-option-2','question-two-weight','question-two-option',.18)" class="form-check-input" type="radio"
-                                                                        name="flexRadioDefault" id="question-2-option-2" value="2">
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-2-option-2','question-two-weight','question-two-option',.18)"
+                                                                        class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="question-2-option-2"
+                                                                        value="2">
                                                                     <label class="form-check-label"
                                                                         for="question-2-option-2">
                                                                         May get harmed.
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-2-option-3','question-two-weight','question-two-option',.18)" class="form-check-input" type="radio"
-                                                                        name="flexRadioDefault" id="question-2-option-3" value="3">
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-2-option-3','question-two-weight','question-two-option',.18)"
+                                                                        class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="question-2-option-3"
+                                                                        value="3">
                                                                     <label class="form-check-label"
                                                                         for="question-2-option-3">
-                                                                        Opportunity to cut some benefit by getting the risk.
+                                                                        Opportunity to cut some benefit by getting the
+                                                                        risk.
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-2-option-4','question-two-weight','question-two-option',.18)" class="form-check-input" type="radio"
-                                                                        name="flexRadioDefault" id="question-2-option-4" value="4">
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-2-option-4','question-two-weight','question-two-option',.18)"
+                                                                        class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="question-2-option-4"
+                                                                        value="4">
                                                                     <label class="form-check-label"
                                                                         for="question-2-option-4">
                                                                         Its very natural concern.
@@ -157,156 +198,214 @@
                                                                 </div>
                                                             </div>
                                                             <div class="question-weight">
-                                                                <p class="m-0">Score: <label id="question-two-weight" for="">0</label></p>
-                                                                <p class="m-0">Option: <label id="question-two-option" for="">0</label></p>
+                                                                <p class="m-0">Score: <label id="question-two-weight"
+                                                                        for="">0</label></p>
+                                                                <p class="m-0">Option: <label id="question-two-option"
+                                                                        for="">0</label></p>
                                                             </div>
                                                             <div class="modal-footer">
-                                                                <button onclick="needHelpQuestionButtonEvent('one','two',true)" id="wealth-question-two-previous" type="button"
+                                                                <button
+                                                                    onclick="needHelpQuestionButtonEvent('one','two',true)"
+                                                                    id="wealth-question-two-previous" type="button"
                                                                     class="btn btn-secondary">Previous</button>
-                                                                <button onclick="needHelpQuestionButtonEvent('three','two',true)" id="wealth-question-two-next" type="button"
+                                                                <button
+                                                                    onclick="needHelpQuestionButtonEvent('three','two',true)"
+                                                                    id="wealth-question-two-next" type="button"
                                                                     class="btn btn-primary">Next</button>
                                                             </div>
-    
+
                                                         </div>
-    
+
                                                         <!-- question box 3-->
                                                         <div id="wealth-question-three" class="question-box">
                                                             <h5 class="">Your earning preferences.</h5>
-    
+
                                                             <div class="question-area mb-3">
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-3-option-1','question-three-weight','question-three-option',.15)" class="form-check-input" type="radio"
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-3-option-1','question-three-weight','question-three-option',.15)"
+                                                                        class="form-check-input" type="radio"
                                                                         name="flexRadioDefault" id="question-3-option-1"
-                                                                         value="1">
+                                                                        value="1">
                                                                     <label class="form-check-label"
                                                                         for="question-3-option-1">
                                                                         I should get a job to get salaries regularly.
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-3-option-2','question-three-weight','question-three-option',.15)" class="form-check-input" type="radio"
-                                                                        name="flexRadioDefault" id="question-3-option-2" value="2">
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-3-option-2','question-three-weight','question-three-option',.15)"
+                                                                        class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="question-3-option-2"
+                                                                        value="2">
                                                                     <label class="form-check-label"
                                                                         for="question-3-option-2">
-                                                                        I should try to do some business along with my job.
+                                                                        I should try to do some business along with my
+                                                                        job.
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-3-option-3','question-three-weight','question-three-option',.15)" class="form-check-input" type="radio"
-                                                                        name="flexRadioDefault" id="question-3-option-3" value="3">
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-3-option-3','question-three-weight','question-three-option',.15)"
+                                                                        class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="question-3-option-3"
+                                                                        value="3">
                                                                     <label class="form-check-label"
                                                                         for="question-3-option-3">
                                                                         I should run a business.
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-3-option-4','question-three-weight','question-three-option',.15)" class="form-check-input" type="radio"
-                                                                        name="flexRadioDefault" id="question-3-option-4" value="4">
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-3-option-4','question-three-weight','question-three-option',.15)"
+                                                                        class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="question-3-option-4"
+                                                                        value="4">
                                                                     <label class="form-check-label"
                                                                         for="question-3-option-4">
-                                                                        I should get involved into a business with partners.
+                                                                        I should get involved into a business with
+                                                                        partners.
                                                                     </label>
                                                                 </div>
                                                             </div>
                                                             <div class="question-weight">
-                                                                <p class="m-0">Score: <label id="question-three-weight" for="">0</label></p>
-                                                                <p class="m-0">Option: <label id="question-three-option" for="">0</label></p>
+                                                                <p class="m-0">Score: <label id="question-three-weight"
+                                                                        for="">0</label></p>
+                                                                <p class="m-0">Option: <label id="question-three-option"
+                                                                        for="">0</label></p>
                                                             </div>
                                                             <div class="modal-footer">
-                                                                <button onclick="needHelpQuestionButtonEvent('two','three',true)" id="wealth-question-three-previous" type="button"
+                                                                <button
+                                                                    onclick="needHelpQuestionButtonEvent('two','three',true)"
+                                                                    id="wealth-question-three-previous" type="button"
                                                                     class="btn btn-secondary">Previous</button>
-                                                                <button onclick="needHelpQuestionButtonEvent('four','three',true)" id="wealth-question-three-next" type="button"
+                                                                <button
+                                                                    onclick="needHelpQuestionButtonEvent('four','three',true)"
+                                                                    id="wealth-question-three-next" type="button"
                                                                     class="btn btn-primary">Next</button>
                                                             </div>
-    
+
                                                         </div>
-    
+
                                                         <!-- question box 4-->
                                                         <div id="wealth-question-four" class="question-box">
-                                                            <h5 class="">You feel when you come to know about a financial loss.</h5>
-    
+                                                            <h5 class="">You feel when you come to know about a
+                                                                financial loss.</h5>
+
                                                             <div class="question-area mb-3">
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-4-option-1','question-four-weight','question-four-option',.18)" class="form-check-input" type="radio"
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-4-option-1','question-four-weight','question-four-option',.18)"
+                                                                        class="form-check-input" type="radio"
                                                                         name="flexRadioDefault" id="question-4-option-1"
-                                                                         value="1">
+                                                                        value="1">
                                                                     <label class="form-check-label"
                                                                         for="question-4-option-1">
                                                                         I can not accept.
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-4-option-2','question-four-weight','question-four-option',.18)" class="form-check-input" type="radio"
-                                                                        name="flexRadioDefault" id="question-4-option-2" value="2">
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-4-option-2','question-four-weight','question-four-option',.18)"
+                                                                        class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="question-4-option-2"
+                                                                        value="2">
                                                                     <label class="form-check-label"
-                                                                        for="question-4-option-2" >
+                                                                        for="question-4-option-2">
                                                                         I need to overcome the loss in future.
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-4-option-3','question-four-weight','question-four-option',.18)" class="form-check-input" type="radio"
-                                                                        name="flexRadioDefault" id="question-4-option-3" value="3">
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-4-option-3','question-four-weight','question-four-option',.18)"
+                                                                        class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="question-4-option-3"
+                                                                        value="3">
                                                                     <label class="form-check-label"
                                                                         for="question-4-option-3">
                                                                         Its a normal concern in investing.
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-4-option-4','question-four-weight','question-four-option',.18)" class="form-check-input" type="radio"
-                                                                        name="flexRadioDefault" id="question-4-option-4" value="4">
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-4-option-4','question-four-weight','question-four-option',.18)"
+                                                                        class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="question-4-option-4"
+                                                                        value="4">
                                                                     <label class="form-check-label"
                                                                         for="question-4-option-4">
                                                                         I was doing business.
                                                                     </label>
                                                                 </div>
-                                                                
+
                                                             </div>
                                                             <div class="question-weight">
-                                                                <p class="m-0">Score: <label id="question-four-weight" for="">0</label></p>
-                                                                <p class="m-0">Option: <label id="question-four-option" for="">0</label></p>
+                                                                <p class="m-0">Score: <label id="question-four-weight"
+                                                                        for="">0</label></p>
+                                                                <p class="m-0">Option: <label id="question-four-option"
+                                                                        for="">0</label></p>
                                                             </div>
                                                             <div class="modal-footer">
-                                                                <button onclick="needHelpQuestionButtonEvent('three','four',true)" id="wealth-question-four-previous" type="button"
-                                                                    class="btn btn-secondary" >Previous</button>
-                                                                <button onclick="needHelpQuestionButtonEvent('five','four',true)" id="wealth-question-four-next" type="button"
+                                                                <button
+                                                                    onclick="needHelpQuestionButtonEvent('three','four',true)"
+                                                                    id="wealth-question-four-previous" type="button"
+                                                                    class="btn btn-secondary">Previous</button>
+                                                                <button
+                                                                    onclick="needHelpQuestionButtonEvent('five','four',true)"
+                                                                    id="wealth-question-four-next" type="button"
                                                                     class="btn btn-primary">Next</button>
                                                             </div>
-    
+
                                                         </div>
-    
+
                                                         <!-- question box 5-->
                                                         <div id="wealth-question-five" class="question-box">
-                                                            <h5 class="">How much you put weight while thinking of investing about past performance of the business idea.</h5>
-    
+                                                            <h5 class="">How much you put weight while thinking of
+                                                                investing about past performance of the business idea.
+                                                            </h5>
+
                                                             <div class="question-area mb-3">
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-5-option-1','question-five-weight','question-five-option',.1)" class="form-check-input" type="radio"
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-5-option-1','question-five-weight','question-five-option',.1)"
+                                                                        class="form-check-input" type="radio"
                                                                         name="flexRadioDefault" id="question-5-option-1"
-                                                                         value="1">
+                                                                        value="1">
                                                                     <label class="form-check-label"
                                                                         for="question-5-option-1">
-                                                                        I must consider the past performance of the business.
+                                                                        I must consider the past performance of the
+                                                                        business.
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-5-option-2','question-five-weight','question-five-option',.1)" class="form-check-input" type="radio"
-                                                                        name="flexRadioDefault" id="question-5-option-2" value="2">
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-5-option-2','question-five-weight','question-five-option',.1)"
+                                                                        class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="question-5-option-2"
+                                                                        value="2">
                                                                     <label class="form-check-label"
                                                                         for="question-5-option-2">
                                                                         I should think.
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-5-option-3','question-five-weight','question-five-option',.1)" class="form-check-input" type="radio"
-                                                                        name="flexRadioDefault" id="question-5-option-3" value="3">
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-5-option-3','question-five-weight','question-five-option',.1)"
+                                                                        class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="question-5-option-3"
+                                                                        value="3">
                                                                     <label class="form-check-label"
                                                                         for="question-5-option-3">
-                                                                        I may think about the past performance of the business.
+                                                                        I may think about the past performance of the
+                                                                        business.
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input onclick="getNeedHelpQuestionValue('question-5-option-4','question-five-weight','question-five-option',.1)" class="form-check-input" type="radio"
-                                                                        name="flexRadioDefault" id="question-5-option-4" value="4">
+                                                                    <input
+                                                                        onclick="getNeedHelpQuestionValue('question-5-option-4','question-five-weight','question-five-option',.1)"
+                                                                        class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="question-5-option-4"
+                                                                        value="4">
                                                                     <label class="form-check-label"
                                                                         for="question-5-option-4">
                                                                         Past does not determine future profit.
@@ -314,19 +413,25 @@
                                                                 </div>
                                                             </div>
                                                             <div class="question-weight">
-                                                                <p class="m-0">Score: <label id="question-five-weight" for="">0</label></p>
-                                                                <p class="m-0">Option: <label id="question-five-option" for="">0</label></p>
+                                                                <p class="m-0">Score: <label id="question-five-weight"
+                                                                        for="">0</label></p>
+                                                                <p class="m-0">Option: <label id="question-five-option"
+                                                                        for="">0</label></p>
                                                             </div>
                                                             <div class="modal-footer">
-                                                                <button onclick="needHelpQuestionButtonEvent('four','five',true)" id="wealth-question-five-previous" type="button"
+                                                                <button
+                                                                    onclick="needHelpQuestionButtonEvent('four','five',true)"
+                                                                    id="wealth-question-five-previous" type="button"
                                                                     class="btn btn-secondary">Previous</button>
-                                                                    <button  onclick="needHelpQuestionButtonEvent('wealth-demographic-calculation','wealth-risk-question-area',false)" id="wealth-question-six-submit" type="button"
+                                                                <button
+                                                                    onclick="needHelpQuestionButtonEvent('wealth-demographic-calculation','wealth-risk-question-area',false)"
+                                                                    id="wealth-question-six-submit" type="button"
                                                                     class="btn btn-primary">Submit</button>
                                                             </div>
-    
+
                                                         </div>
-    
-    
+
+
                                                         <!-- question box 6-->
                                                         <!-- <div id="wealth-question-six" class="question-box">
                                                             <h5 class="">Would you invest in a company that underperformed
@@ -381,8 +486,9 @@
                                                     <div class="modal-body">
                                                         <div class="container">
                                                             <div class="text-center mb-3">
-                                                                <h4 class="text-" id="exampleModalLabel">Your Demographic Score Card:</h4>
-    
+                                                                <h4 class="text-" id="exampleModalLabel">Your
+                                                                    Demographic Score Card:</h4>
+
                                                             </div>
                                                             <div class="calculate-demographic-score">
                                                                 <div class="row">
@@ -390,16 +496,20 @@
                                                                         <div class="mb-3">
                                                                             <h5 for="">Gender</h5>
                                                                             <div class="form-check form-check-inline">
-                                                                                <input onclick="getNeedHelpQuestionValue('gender1')" class="form-check-input" type="radio"
-                                                                                    name="gender" id="gender1"
-                                                                                    value="4" checked>
+                                                                                <input
+                                                                                    onclick="getNeedHelpQuestionValue('gender1')"
+                                                                                    class="form-check-input"
+                                                                                    type="radio" name="gender"
+                                                                                    id="gender1" value="4" checked>
                                                                                 <label class="form-check-label"
                                                                                     for="gender1">Male</label>
                                                                             </div>
                                                                             <div class="form-check form-check-inline">
-                                                                                <input onclick="getNeedHelpQuestionValue('gender2')" class="form-check-input" type="radio"
-                                                                                    name="gender" id="gender2"
-                                                                                    value="4" >
+                                                                                <input
+                                                                                    onclick="getNeedHelpQuestionValue('gender2')"
+                                                                                    class="form-check-input"
+                                                                                    type="radio" name="gender"
+                                                                                    id="gender2" value="4">
                                                                                 <label class="form-check-label"
                                                                                     for="gender2">Female</label>
                                                                             </div>
@@ -424,16 +534,20 @@
                                                                         <div class="mb-3">
                                                                             <h5 for="">Education</h5>
                                                                             <div class="form-check form-check-inline">
-                                                                                <input onclick="getNeedHelpQuestionValue('education1')" class="form-check-input" type="radio"
-                                                                                    name="education"
+                                                                                <input
+                                                                                    onclick="getNeedHelpQuestionValue('education1')"
+                                                                                    class="form-check-input"
+                                                                                    type="radio" name="education"
                                                                                     id="education1" value="4" checked>
                                                                                 <label class="form-check-label"
                                                                                     for="education1">Graduation</label>
                                                                             </div>
                                                                             <div class="form-check form-check-inline">
-                                                                                <input onclick="getNeedHelpQuestionValue('education2')" class="form-check-input" type="radio"
-                                                                                    name="education"
-                                                                                    id="education2" value="4" >
+                                                                                <input
+                                                                                    onclick="getNeedHelpQuestionValue('education2')"
+                                                                                    class="form-check-input"
+                                                                                    type="radio" name="education"
+                                                                                    id="education2" value="4">
                                                                                 <label class="form-check-label"
                                                                                     for="education2">Under
                                                                                     Graduate</label>
@@ -442,39 +556,50 @@
                                                                         <div class="mb-3">
                                                                             <h5 for="">Investment Horizon</h5>
                                                                             <div class="form-check form-check-inline">
-                                                                                <input onclick="getNeedHelpQuestionValue('indicative-invest-1')" class="form-check-input" type="radio"
+                                                                                <input
+                                                                                    onclick="getNeedHelpQuestionValue('indicative-invest-1')"
+                                                                                    class="form-check-input"
+                                                                                    type="radio"
                                                                                     name="investmentHorizon"
-                                                                                    id="indicative-invest-1"
-                                                                                    value="4" checked>
+                                                                                    id="indicative-invest-1" value="4"
+                                                                                    checked>
                                                                                 <label class="form-check-label"
-                                                                                    for="indicative-invest-1">Short term</label>
+                                                                                    for="indicative-invest-1">Short
+                                                                                    term</label>
                                                                             </div>
                                                                             <div class="form-check form-check-inline">
-                                                                                <input onclick="getNeedHelpQuestionValue('indicative-invest-2')" class="form-check-input" type="radio"
+                                                                                <input
+                                                                                    onclick="getNeedHelpQuestionValue('indicative-invest-2')"
+                                                                                    class="form-check-input"
+                                                                                    type="radio"
                                                                                     name="investmentHorizon"
-                                                                                    id="indicative-invest-2"
-                                                                                    value="4" >
+                                                                                    id="indicative-invest-2" value="4">
                                                                                 <label class="form-check-label"
-                                                                                    for="indicative-invest-2">Long term</label>
+                                                                                    for="indicative-invest-2">Long
+                                                                                    term</label>
                                                                             </div>
                                                                         </div>
-    
-    
+
+
                                                                     </div>
                                                                     <!-- right side -->
                                                                     <div class="col-lg-6">
                                                                         <div class="mb-3">
                                                                             <h5 for="">Age</h5>
                                                                             <div class="form-check form-check-inline">
-                                                                                <input onclick="getNeedHelpQuestionValue('age1')" class="form-check-input" type="radio"
-                                                                                    name="age" id="age1"
+                                                                                <input
+                                                                                    onclick="getNeedHelpQuestionValue('age1')"
+                                                                                    class="form-check-input"
+                                                                                    type="radio" name="age" id="age1"
                                                                                     value="2" checked>
                                                                                 <label class="form-check-label"
                                                                                     for="age1">Below 50</label>
                                                                             </div>
                                                                             <div class="form-check form-check-inline">
-                                                                                <input onclick="getNeedHelpQuestionValue('age2')" class="form-check-input" type="radio"
-                                                                                    name="age" id="age2"
+                                                                                <input
+                                                                                    onclick="getNeedHelpQuestionValue('age2')"
+                                                                                    class="form-check-input"
+                                                                                    type="radio" name="age" id="age2"
                                                                                     value="2">
                                                                                 <label class="form-check-label"
                                                                                     for="age2">Above 50</label>
@@ -483,15 +608,20 @@
                                                                         <div class="mb-3">
                                                                             <h5 for="">Occupation</h5>
                                                                             <div class="form-check form-check-inline">
-                                                                                <input onclick="getNeedHelpQuestionValue('occupation1')" class="form-check-input" type="radio"
-                                                                                    name="occupation"
+                                                                                <input
+                                                                                    onclick="getNeedHelpQuestionValue('occupation1')"
+                                                                                    class="form-check-input"
+                                                                                    type="radio" name="occupation"
                                                                                     id="occupation1" value="2" checked>
                                                                                 <label class="form-check-label"
-                                                                                    for="occupation1">Self employed</label>
+                                                                                    for="occupation1">Self
+                                                                                    employed</label>
                                                                             </div>
                                                                             <div class="form-check form-check-inline">
-                                                                                <input onclick="getNeedHelpQuestionValue('occupation2')" class="form-check-input" type="radio"
-                                                                                    name="occupation"
+                                                                                <input
+                                                                                    onclick="getNeedHelpQuestionValue('occupation2')"
+                                                                                    class="form-check-input"
+                                                                                    type="radio" name="occupation"
                                                                                     id="occupation2" value="2">
                                                                                 <label class="form-check-label"
                                                                                     for="occupation2">Salaried</label>
@@ -500,14 +630,20 @@
                                                                         <div class="mb-3">
                                                                             <h5 for="">Experience in doing business</h5>
                                                                             <div class="form-check form-check-inline">
-                                                                                <input onclick="getNeedHelpQuestionValue('investing1')" class="form-check-input" type="radio"
+                                                                                <input
+                                                                                    onclick="getNeedHelpQuestionValue('investing1')"
+                                                                                    class="form-check-input"
+                                                                                    type="radio"
                                                                                     name="experienceInvesting"
                                                                                     id="investing1" value="2" checked>
                                                                                 <label class="form-check-label"
                                                                                     for="investing1">Yeas</label>
                                                                             </div>
                                                                             <div class="form-check form-check-inline">
-                                                                                <input onclick="getNeedHelpQuestionValue('investing2')" class="form-check-input" type="radio"
+                                                                                <input
+                                                                                    onclick="getNeedHelpQuestionValue('investing2')"
+                                                                                    class="form-check-input"
+                                                                                    type="radio"
                                                                                     name="experienceInvesting"
                                                                                     id="investing2" value="2">
                                                                                 <label class="form-check-label"
@@ -518,42 +654,57 @@
                                                                 </div>
                                                             </div>
                                                             <div class=" text-center mt-3">
-                                                                <button onclick="displayHide('wealth-risk-question-area','wealth-demographic-calculation')" id="wealth-demographic-score-back" type="button"
+                                                                <button
+                                                                    onclick="displayHide('wealth-risk-question-area','wealth-demographic-calculation')"
+                                                                    id="wealth-demographic-score-back" type="button"
                                                                     class="btn btn-secondary">Back</button>
-                                                                <button onclick="displayHide('wealth-demographic-risk-quotient','wealth-demographic-calculation')" id="wealth-demographic-score-evaluate" type="button"
+                                                                <button
+                                                                    onclick="displayHide('wealth-demographic-risk-quotient','wealth-demographic-calculation')"
+                                                                    id="wealth-demographic-score-evaluate" type="button"
                                                                     class="btn btn-secondary">Evaluate Now</button>
-    
+
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <!-- demographic risk quotient -->
-    
+
                                                 <div id="wealth-demographic-risk-quotient">
                                                     <div class="modal-body">
                                                         <div class="container">
                                                             <div class="text-center  mb-3">
-                                                                <h4 class="text-" id="exampleModalLabel">Your Risk Quotient
+                                                                <h4 class="text-" id="exampleModalLabel">Your Risk
+                                                                    Quotient
                                                                 </h4>
-                                                                <p class="">Answer the following questions to know your risk
+                                                                <p class="">Answer the following questions to know your
+                                                                    risk
                                                                     profile</p>
                                                                 <img src="" alt="" class="">
-                                                                <h4 class="">You Are a <span id="risk-id"></span> Investor</h4>
-                                                                <p class="">As a growth investor, your primary objective is
+                                                                <h4 class="">You Are a <span id="risk-id"></span>
+                                                                    Investor</h4>
+                                                                <p class="">As a growth investor, your primary objective
+                                                                    is
                                                                     to grow your money aggressively, over medium to long
-                                                                    term. You may have the experience and capability to take
-                                                                    added risks and do not easily get affected by short term
-                                                                    volatility. At the back of your mind, you are aware that
-                                                                    you could get back lesser than what you invested bur are
-                                                                    willing to the riskh in a bid to grow your money.</p>
+                                                                    term. You may have the experience and capability to
+                                                                    take
+                                                                    added risks and do not easily get affected by short
+                                                                    term
+                                                                    volatility. At the back of your mind, you are aware
+                                                                    that
+                                                                    you could get back lesser than what you invested bur
+                                                                    are
+                                                                    willing to the riskh in a bid to grow your money.
+                                                                </p>
                                                             </div>
-    
+
                                                             <div class=" text-center mt-3">
-                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Continue</button>
+                                                                <button type="button" class="btn btn-secondary"
+                                                                    data-bs-dismiss="modal">Continue</button>
                                                             </div>
                                                             <div
                                                                 class="text-center mt-2 d-flex align-items-center justify-content-center">
-                                                                Not convinced? <a href="" class="btn text-danger">Evaluate
+                                                                Not convinced? <a href=""
+                                                                    class="btn text-danger">Evaluate
                                                                     again</a>
                                                             </div>
                                                         </div>
@@ -562,21 +713,23 @@
                                             </div>
                                         </div>
                                     </div>
-    
-    
+
+
                                 </div>
 
                             </div>
                             <div class="form-group mb-3 ">
                                 <label for="">Current assets:</label>
-                                <input type="number" class="form-control" id="investor-current-asset-input" name="" placeholder="" value="4000000">
+                                <input type="number" class="form-control" id="investor-current-asset-input" name=""
+                                    placeholder="" value="4000000">
                             </div>
 
                             <div class="form-group mb-3">
                                 <label for="">Savings per year:</label>
-                                <input type="number" class="form-control" id="investor-saving-per-year-input" name="" placeholder="" value="60000">
+                                <input type="number" class="form-control" id="investor-saving-per-year-input" name=""
+                                    placeholder="" value="60000">
                             </div>
-                            
+
 
                             <div class="form-group mb-3">
                                 <label for="">Marginal tax rate:</label>
@@ -595,12 +748,16 @@
                             </div>
                             <div class="form-group mb-3 ">
                                 <label for="">Income required in next two year:</label>
-                                <input type="text" class="form-control" id="investor-required-income-next-two-year-input" name="" placeholder="" value="15%">
+                                <input type="text" class="form-control"
+                                    id="investor-required-income-next-two-year-input" name="" placeholder=""
+                                    value="15%">
                             </div>
                             <div class="  ">
                                 <div class="d-flex justify-content-end">
-                                    <button onclick="" type="reset" id="investor-reset" class="btn calculate-button mx-2">reset</button>
-                                    <button onclick="investorInput()" type="submit" id="investor-calculate" class="btn calculate-button mx-2">calculate</button>
+                                    <button onclick="" type="reset" id="investor-reset"
+                                        class="btn calculate-button mx-2">reset</button>
+                                    <button onclick="investorInput()" type="submit" id="investor-calculate"
+                                        class="btn calculate-button mx-2">calculate</button>
                                 </div>
                             </div>
                         </form>
@@ -608,7 +765,8 @@
                     <!-- tax output -->
                     <div class="tax-output">
                         <p class="">
-                            It is equal to liquidity constraint <span id="ekush-liquidity-constraint"></span> it is equal to six months
+                            It is equal to liquidity constraint <span id="ekush-liquidity-constraint"></span> it is
+                            equal to six months
                             savings.
                         </p>
                         <table class="table table-borderless w-25">
@@ -642,9 +800,134 @@
                         </table>
 
                     </div>
-
-
                     <div id="chartContainer" style="height: 300px; width: 100%;" class=""></div>
+
+                    <div class="calculator-pera-text">
+                        <ul class="text-">
+                            <li>
+                                <strong>Current age</strong>
+                                <ul>
+                                    <li class="text-justify">
+
+                                        Your current age. This is by far the most important aspect of asset allocation.
+                                        For most people
+                                        the majority of their portfolio is for their retirement. The younger you are,
+                                        the less likely
+                                        you need this money any time soon. This allows you to invest more aggressively
+                                        in stocks that
+                                        generally have the best long-term returns. As you get older, it is advisable to
+                                        move more of
+                                        your investments to securities with less fluctuation such as cash and bonds.
+                                        This can help
+                                        ensure the money is available when you need it.
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Current assets</strong>
+                                <ul>
+                                    <li>This is the total value of your investment portfolio. Our asset allocator
+                                        increases your stock
+                                        exposure as your portfolio increases. Generally speaking, larger portfolios are
+                                        less likely to
+                                        leave individuals cash poor in a market downturn. This allows people with large
+                                        portfolios to
+                                        invest a bit more aggressively.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Savings per year</strong>
+                                <ul>
+                                    <li>This is the amount you will be adding to your investments each year. Like
+                                        portfolio size, the
+                                        more you invest the more aggressive your investments should be.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Income required</strong>
+                                <ul>
+                                    <li>This is the percentage of income you will need from your investments. Most
+                                        people do not require
+                                        any income from their investments until they retire.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Marginal tax rate</strong>
+                                <ul>
+                                    <li>The tax rate you expect to pay on your investments.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Your personal ability to tolerate your portfolio value fluctuating up and down. Many
+                                people
+                                overestimate their ability to tolerate risk. Unless you can handle a 20% decline in your
+                                portfolio during a stock market correction, you may wish to keep your risk tolerance at
+                                or below
+                                the mid-point.</li>
+
+                        
+
+
+                            <li>Information and interactive calculators are made available to you as self-help tools for
+                                your
+                                independent use and are not intended to provide investment advice. We cannot and do not
+                                guarantee their applicability or accuracy in regards to your individual circumstances.
+                                All examples are hypothetical and are for illustrative purposes. We encourage you to
+                                seek
+                                personalized advice from qualified professionals regarding all personal finance issues.
+                            </li>
+
+                       
+                            <li>
+
+                                Expected returns of diffierent asset classes are based on historical data, there is no
+                                assurance
+                                these will be materialized in future. interest rate of interst rate will vary year by
+                                year.
+                                Fixed income risks include, but are not limited to, changes in interest rates,
+                                liquidity, credit
+                                quality, volatility, and duration.</li>
+
+                        
+                            
+
+                            <li>Calculators are based on subjective can fact based calculations and are being made
+                                available to
+                                you as self-help tools for your independent use and are not intended to provide
+                                investment
+                                advice or be representative of actual results. We do not guarantee their applicability
+                                or
+                                accuracy in regards to your individual circumstances. The determinations made by these
+                                calculators should not be construed as guarantees or projections. Moreover, the
+                                reasonableness
+                                of certain information may change over time because of changes in tax law, investment
+                                trends and
+                                your personal circumstances. The information contained here is based on current law and
+                                has been
+                                obtained from sources believed to be reliable, but we do not guarantee its accuracy.
+                            </li>
+
+                       
+                            <li>
+
+                                Investment results can vary considerably depending on the type of securities involved,
+                                general
+                                market conditions and other factors. It is important that you periodically review and
+                                update
+                                your plans. Ekush Wealth Management Limited does not provide tax or legal advice. You
+                                should
+                                contact your tax or legal advisor concerning your particular situation. All investments
+                                carry a
+                                degree of risk, and past performance is not a guarantee of future results.Asset
+                                allocation and
+                                diversification do not guarantee a profit nor protect against loss.
+                            </li>
+                        </ul>
+
+
+
+                    </div>
                 </div>
 
 

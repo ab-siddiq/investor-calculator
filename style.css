@@ -151,3 +151,7 @@
     padding: 10px 20px;
     border-radius: 10px;
 } */
+
+#calculator .calculator-pera-text{
+    text-align: justify;
+}
