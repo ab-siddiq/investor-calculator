@@ -154,4 +154,8 @@
 
 #calculator .calculator-pera-text{
     text-align: justify;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 10px;
 }
