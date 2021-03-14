@@ -62,8 +62,6 @@ function getSelectInputValue(id) {
     return selectInputValue;
 }
 
-
-
 function investorCalculationFormula(inputValues) {
     const {risk, asset, savings, marginalTax, requiredIncome} = inputValues;
     let liquidityConstraint = (savings / 12) * 6;
@@ -151,7 +149,7 @@ function investorCalculationFormula(inputValues) {
 function showInvestorOutput(liquidityConstraint,ekusFund,shanchaypatra,bankFDR,cash) {
     document.getElementById("ekush-liquidity-constraint").innerHTML = liquidityConstraint;
     document.getElementById("ekush-fund").innerHTML = ekusFund +"%";
-    document.getElementById("ekush-shanchaypatra").innerHTML = (shanchaypatra/100).toFixed(3);
+    document.getElementById("ekush-shanchaypatra").innerHTML = (shanchaypatra).toFixed(3);
     document.getElementById("ekush-bank-fdr").innerHTML = bankFDR;
     document.getElementById("ekush-cash").innerHTML = cash;
 }
