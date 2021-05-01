@@ -18,9 +18,9 @@ window.onload =  function (liquidityConstraint,ekusFund,shanchaypatra,bankFDR,ca
             indexLabel: "{label} - {y}%",
             dataPoints: [
                 { y: bankFDR  || 10, label: "Bank FDR" },
-                { y: cash || 0, label: "Cash" },
+                { y: Math.floor(cash) || 0, label: "Cash" },
                 { y: ekusFund || 0, label: "Ekush's Funds" },
-                { y: shanchaypatra || 0, label: "Shanchaypatra" },
+                { y: Math.ceil(shanchaypatra) || 0, label: "Shanchaypatra" },
                 
             ]
         }]
@@ -149,9 +149,11 @@ function investorCalculationFormula(inputValues) {
 function showInvestorOutput(liquidityConstraint,ekusFund,shanchaypatra,bankFDR,cash) {
     document.getElementById("ekush-liquidity-constraint").innerHTML = liquidityConstraint;
     document.getElementById("ekush-fund").innerHTML = ekusFund +"%";
-    document.getElementById("ekush-shanchaypatra").innerHTML = (shanchaypatra).toFixed(3);
-    document.getElementById("ekush-bank-fdr").innerHTML = bankFDR;
-    document.getElementById("ekush-cash").innerHTML = cash;
+    // document.getElementById("ekush-shanchaypatra").innerHTML = (shanchaypatra).toFixed(3) + "%";
+    document.getElementById("ekush-shanchaypatra").innerHTML = Math.ceil(shanchaypatra) + "%";
+    document.getElementById("ekush-bank-fdr").innerHTML = bankFDR +"%";
+    // document.getElementById("ekush-cash").innerHTML = cash +"%";
+    document.getElementById("ekush-cash").innerHTML = Math.floor(cash) +"%";
 }
 
 
